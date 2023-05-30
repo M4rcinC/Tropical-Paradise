@@ -12,6 +12,7 @@ const handleNav = () => {
     })
 
     handleNavItemsAnimation();
+    deleteAnimation();
 }
 
 const handleNavItemsAnimation = () => {
@@ -21,7 +22,6 @@ const handleNavItemsAnimation = () => {
         item.classList.toggle('nav-item-animation')
         item.style.animationDelay = '.' + delayTime + 's';
         delayTime++;
-        deleteAnimation();
     })
 }
 
