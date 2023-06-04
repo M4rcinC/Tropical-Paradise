@@ -268,9 +268,16 @@ body {
   font-family: "Dancing script", cursive;
   font-size: 4.8rem;
   font-weight: 300;
+  margin-bottom: 0.5em;
 }
 .hero-img__text {
   font-size: 1.4rem;
+  padding: 0.8em;
+}
+.hero-img hr {
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
 }
 
 @media (min-width: 576px) {
@@ -335,6 +342,19 @@ body {
   .dreams__text {
     font-size: 1.6rem;
   }
+  .hero-img {
+    background: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/polynesia-big.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .hero-img__title {
+    font-size: 5.2rem;
+  }
+  .hero-img__text {
+    font-size: 1.6rem;
+    padding: 0.8em;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -364,5 +384,19 @@ body {
   }
   .dreams__text {
     font-size: 1.8rem;
+  }
+  .hero-img {
+    padding: 40em 0;
+  }
+  .hero-img__title {
+    font-size: 7.2rem;
+  }
+  .hero-img__text {
+    font-size: 2.4rem;
+    padding: 1em;
+  }
+  .hero-img hr {
+    width: 70%;
+    max-width: 900px;
   }
 }/*# sourceMappingURL=main.css.map */
