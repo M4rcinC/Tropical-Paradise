@@ -218,7 +218,7 @@ body {
 .header__btn {
   margin-top: 2em;
   padding: 0.8em 1.6em;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background-color: #fff;
   border: none;
   border-radius: 8px;
@@ -247,28 +247,37 @@ body {
 }
 .dreams__text {
   font-size: 1.4rem;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 576px) {
   .dreams__box {
+    font-size: 1.8rem;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .dreams__box-text {
-    width: 55%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .dreams__box-text--right {
     text-align: right;
   }
   .dreams__box-img {
-    width: 40%;
+    width: 48%;
   }
   .dreams__box-img--right {
     order: 1;
   }
+  .dreams__title {
+    font-size: 2.2rem;
+  }
   .dreams__img {
     margin-bottom: 0;
-    min-height: 300px;
+    min-height: 250px;
   }
 }
 @media (min-width: 768px) {
@@ -286,13 +295,22 @@ body {
     font-size: 2.2rem;
   }
   .header__btn {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .dreams__box-text {
     font-size: 1.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .dreams-img {
+    width: 65%;
+  }
+  .dreams__title {
+    font-size: 2.8rem;
+  }
+  .dreams__text {
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 992px) {
@@ -301,7 +319,10 @@ body {
     right: 50px;
   }
   .header__heading {
-    font-size: 10rem;
+    font-size: 9rem;
+  }
+  .header__text {
+    font-size: 2.8rem;
   }
   .nav__item {
     font-size: 4.2rem;
@@ -314,5 +335,11 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2.5em;
+  }
+  .dreams__title {
+    font-size: 3rem;
+  }
+  .dreams__text {
+    font-size: 1.8rem;
   }
 }/*# sourceMappingURL=main.css.map */
