@@ -250,6 +250,29 @@ body {
   margin-bottom: 1em;
 }
 
+.hero-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/polynesia-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 30em 2em;
+  color: #fff;
+  overflow: hidden;
+}
+.hero-img__title {
+  font-family: "Dancing script", cursive;
+  font-size: 4.8rem;
+  font-weight: 300;
+}
+.hero-img__text {
+  font-size: 1.4rem;
+}
+
 @media (min-width: 576px) {
   .dreams__box {
     font-size: 1.8rem;
