@@ -315,6 +315,7 @@ body {
                 padding: 4rem;
                 font-size: 1.4rem;
                 width: 70%;
+                min-width: 250px;
 
                 &-item {
                     padding: 1.5rem;
@@ -442,6 +443,19 @@ body {
             padding: 0.8em;
         }
     }
+
+    .islands {
+        &__cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__card{
+            width: 45%;
+            margin: 1em;
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -502,6 +516,12 @@ body {
         hr {
             width: 70%;
             max-width: 900px;
+        }
+    }
+
+    .islands {
+        &__card{
+            width: 30%;
         }
     }
 }

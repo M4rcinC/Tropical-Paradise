@@ -353,6 +353,7 @@ body {
   padding: 4rem;
   font-size: 1.4rem;
   width: 70%;
+  min-width: 250px;
 }
 .islands__card-info-list-item {
   padding: 1.5rem;
@@ -453,6 +454,15 @@ body {
     font-size: 1.6rem;
     padding: 0.8em;
   }
+  .islands__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .islands__card {
+    width: 45%;
+    margin: 1em;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -496,5 +506,8 @@ body {
   .hero-img hr {
     width: 70%;
     max-width: 900px;
+  }
+  .islands__card {
+    width: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
