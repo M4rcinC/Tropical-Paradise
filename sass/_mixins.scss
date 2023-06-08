@@ -2,9 +2,9 @@
     position: absolute;
     right: 0;
     height: 3px;
-    content: '';
+    content: "";
     background-color: $pure-white;
-    transition: width .3s;
+    transition: width 0.3s;
 }
 
 @mixin heroImages($bgImg) {
@@ -12,4 +12,10 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+@mixin cardItemStyle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
