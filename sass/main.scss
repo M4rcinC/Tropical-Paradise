@@ -346,6 +346,65 @@ body {
     }
 }
 
+//OFFERS
+
+.offers {
+    position: relative;
+    @include heroImages("../img/maldives-small.jpg");
+    overflow: hidden;
+
+    .section-heading {
+        color: white;
+    }
+
+    &__option {
+        background-color: $pure-white;
+        margin: 1em 0;
+        box-shadow: 5px 5px 15px rgba(#101219, 0.6);
+        overflow: hidden;
+
+        &-img {
+            width: 100%;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        &-info {
+            padding: 2em;
+            color: $dark;
+        }
+
+        &-heading {
+            margin-bottom: 0.5em;
+            font-size: 2.4rem;
+            font-weight: 300;
+        }
+
+        &-text {
+            margin-bottom: 0.5em;
+            font-size: 1.2rem;
+        }
+
+        &-btn {
+            margin: 1em 0;
+            padding: 0.5em;
+            width: 100%;
+            color: $pure-white;
+            border: none;
+            border-radius: 8px;
+            background-color: $main-color;
+            cursor: pointer;
+
+            &::before {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+
 //media
 
 @media (min-width: 576px) {
@@ -451,7 +510,7 @@ body {
             flex-wrap: wrap;
         }
 
-        &__card{
+        &__card {
             width: 45%;
             margin: 1em;
         }
@@ -520,7 +579,7 @@ body {
     }
 
     .islands {
-        &__card{
+        &__card {
             width: 30%;
         }
     }
