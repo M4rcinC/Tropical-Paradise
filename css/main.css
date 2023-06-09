@@ -406,6 +406,8 @@ body {
 .offers__option-info {
   padding: 2em;
   color: #2e2e2e;
+  background-color: #fff;
+  z-index: 10;
 }
 .offers__option-heading {
   margin-bottom: 0.5em;
@@ -458,6 +460,34 @@ body {
   .dreams__img {
     margin-bottom: 0;
     min-height: 250px;
+  }
+  .offers__option {
+    display: flex;
+    margin: 2em 0;
+    width: 100%;
+  }
+  .offers__option-img {
+    width: 50%;
+    height: auto;
+  }
+  .offers__option-img--right {
+    order: 1;
+  }
+  .offers__option-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .offers__option-heading {
+    font-size: 3.6rem;
+    margin-bottom: 0.5em;
+  }
+  .offers__option-text {
+    font-size: 1.4rem;
+  }
+  .offers__option-btn {
+    padding: 1em;
   }
 }
 @media (min-width: 768px) {
@@ -560,5 +590,16 @@ body {
   }
   .islands__card {
     width: 30%;
+  }
+  .offers {
+    background: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/maldives-big.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .offers__option-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
   }
 }/*# sourceMappingURL=main.css.map */
