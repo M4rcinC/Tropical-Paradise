@@ -13,7 +13,6 @@ $(document).ready(function () {
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
               }
             },
         ]
