@@ -432,6 +432,46 @@ body {
   background-color: #164dcc;
 }
 
+@media (max-width: 767px) {
+  .review.section-padding {
+    padding: 6em 0;
+  }
+}
+.review__box {
+  position: relative;
+  margin: 2em;
+  padding: 3em;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.1803921569);
+  transition: transform 0.3s;
+}
+.review__box:hover {
+  transform: scale(0.95);
+}
+.review__box-img {
+  position: absolute;
+  top: 18%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+.review__box-img img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.review__box-quote {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  color: #1755e7;
+}
+.review__box-text {
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+  color: #2e2e2e;
+}
+
 @media (min-width: 576px) {
   .dreams__box {
     font-size: 1.8rem;

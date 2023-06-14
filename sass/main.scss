@@ -407,6 +407,55 @@ body {
     }
 }
 
+//REVIEWS
+
+@media (max-width: 767px) {
+    .review.section-padding {
+        padding: 6em 0;
+    }
+}
+
+.review {
+    &__box {
+        position: relative;
+        margin: 2em;
+        padding: 3em;
+        border-radius: 8px;
+        box-shadow: 3px 3px 10px #2e2e2e2e;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    &__box-img {
+        position: absolute;
+        top: 18%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &__box-quote {
+        margin-bottom: 1em;
+        font-size: 3rem;
+        color: $main-color;
+    }
+
+    &__box-text {
+        margin-bottom: 1em;
+        font-size: 1.4rem;
+        color: $dark;
+    }
+}
+
 //media
 
 @media (min-width: 576px) {
@@ -448,7 +497,7 @@ body {
     }
 
     .offers {
-        &__option{
+        &__option {
             display: flex;
             margin: 2em 0;
             width: 100%;
@@ -457,7 +506,7 @@ body {
                 width: 50%;
                 height: auto;
 
-                &--right{
+                &--right {
                     order: 1;
                 }
             }
@@ -467,8 +516,6 @@ body {
                 flex-direction: column;
                 justify-content: space-between;
                 width: 50%;
-
-                
             }
 
             &-heading {
@@ -626,10 +673,10 @@ body {
     }
 
     .offers {
-        @include heroImages('../img/maldives-big.jpg');
+        @include heroImages("../img/maldives-big.jpg");
 
         &__option {
-            &-img{
+            &-img {
                 object-fit: cover;
                 height: 300px;
             }
