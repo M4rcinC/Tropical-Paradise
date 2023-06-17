@@ -463,33 +463,33 @@ body {
     background-color: $light-white;
     overflow: hidden;
 
-    .white-block-left{
+    .white-block-left {
         background-color: $dark;
     }
 
-    &__form,&__form-top {
+    &__form,
+    &__form-top {
         display: flex;
         flex-direction: column;
     }
 
-    &__form{
-        &-label{
+    &__form {
+        &-label {
             margin-bottom: 0.5em;
             text-transform: uppercase;
         }
 
-        &-input{
+        &-input {
             @include contactForm;
         }
 
         &-textarea {
             @include contactForm;
 
-            min-width:100%;
+            min-width: 100%;
             max-width: 100%;
             width: 100%;
             min-height: 150px;
-
         }
 
         &-btn {
@@ -503,10 +503,75 @@ body {
             background-color: $main-color;
             cursor: pointer;
 
-            &::before{
+            &::before {
                 background-color: $secondary-color;
             }
         }
+    }
+}
+
+//FOOTER
+
+.footer {
+    color: $pure-white;
+    background-color: $dark;
+
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .wrapper {
+        padding: 6em 2em 2em;
+    }
+
+    &__box,
+    &__box-desktop,
+    &__box-title,
+    &__box-social,
+    &__box-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__box {
+        font-size: 3.4rem;
+    }
+
+    &__box-desktop {
+        display: none;
+    }
+
+    &__box-title {
+        margin-bottom: 1em;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    &__box-social {
+        margin: 2em 0 1em;
+    }
+
+    &__box-link {
+        padding: 0 0.3em;
+        font-size: 3.4rem;
+        color: $pure-white;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:hover {
+            color: $light-white;
+        }
+    }
+
+    &__bottom-text {
+        padding: 2em;
+        text-align: center;
+        font-size: 1.6rem;
     }
 }
 
@@ -655,6 +720,55 @@ body {
         &__card {
             width: 45%;
             margin: 1em;
+        }
+    }
+
+    .footer {
+        &__boxes {
+            display: flex;
+            align-content: space-between;
+        }
+
+        &__box {
+            margin: 0 2em;
+            width: 25%;
+
+            &:first-child {
+                width: 50%;
+            }
+
+            &-title {
+                font-size: 2.4rem;
+                margin-bottom: 1em;
+            }
+
+            &-list {
+                list-style: none;
+
+                &-item {
+                    text-align: center;
+
+                    &:first-child{
+                        margin-top: -.8em;
+                    }
+
+                    &:last-child{
+                        margin-bottom: 1em;
+                    }
+
+                    a {
+                        font-size: 1.4rem;
+                        color: $light-white;
+                        text-decoration: none;
+
+                       
+                    }
+                }
+            }
+        }
+
+        &__box-desktop {
+            display: block;
         }
     }
 }
